@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. https://webflow.com --><!-- Last Published: Wed Apr 08 2026 08:45:53 GMT+0000 (Coordinated Universal Time) -->
-<html data-wf-domain="altrum-template.webflow.io" data-wf-page="699ed6f18aceafc086e38a65"
-  data-wf-site="699ed6f18aceafc086e38a82" lang="en">
+
 
 <head>
   <meta charset="utf-8" />
@@ -40,6 +39,28 @@
     }
     .h1 {
       font-family: 'Bricolage Grotesque', sans-serif !important;
+    }
+
+    /* Fix for missing Webflow/GSAP hover animations on images */
+    .work-card .image-bacgkround {
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    }
+    .work-card:hover .image-bacgkround {
+      transform: scale(1.05) !important;
+    }
+    .work-card .overlay {
+      opacity: 0;
+      transition: opacity 0.4s ease !important;
+    }
+    .work-card:hover .overlay {
+      opacity: 1 !important;
+    }
+    .work-title {
+      transition: transform 0.4s ease, color 0.4s ease !important;
+    }
+    .work-card:hover ~ .text-info-bottom .work-title,
+    .work-wrapper:hover .work-title {
+      transform: translateX(8px) !important;
     }
   </style>
   <link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -181,7 +202,7 @@
           "name": "VK Group"
         }
       },
-      "reviewBody": "What impressed us most was their structured thinking. Every design decision had purpose, every interaction had intention. Altrum™.",
+      "reviewBody": "What impressed us most was their structured thinking. Every design decision had purpose, every interaction had intention. Influmarki.",
       "reviewRating": {
         "@type": "Rating",
         "ratingValue": "5"
@@ -198,7 +219,7 @@
           "name": "Elevate Technologies"
         }
       },
-      "reviewBody": "Working with Altrum™ felt like partnering with an in-house strategic team. They challenged our ideas, strengthened our positioning, and delivered a platform built to scale.",
+      "reviewBody": "Working with Influmarki felt like partnering with an in-house strategic team. They challenged our ideas, strengthened our positioning, and delivered a platform built to scale.",
       "reviewRating": {
         "@type": "Rating",
         "ratingValue": "5"
@@ -422,7 +443,7 @@
                   </div>
                 </a></div>
               <div class="copywrith-dark">
-                <div>© 2026 Altrum™ Studio</div>
+                <div>© 2020 Influmarki Studio</div>
               </div>
             </div>
           </div>
@@ -539,7 +560,25 @@
           <div class="logo-grid">
             <div class="logo-content">
               <div class="logo-wrapper-card">
-                <img
+                <div class="testimonials-card hide-mobile">
+                  <div class="testimonials-top">
+                    <div class="top-text small-tessti">“Influmarki transformed our vision into a refined digital system
+                      that feels both strategic and effortless. Their attention to detail and clarity in execution made
+                      the entire process seamless.”</div>
+                  </div>
+                  <div class="testimonials-bottom">
+                    <div class="div-block"><img
+                        src="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/69a80ee31936a30bcd054873_Person%20with%20Red%20Sunglasses.webp"
+                        loading="lazy" width="40" sizes="40px" alt=""
+                        srcset="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/69a80ee31936a30bcd054873_Person%20with%20Red%20Sunglasses-p-500.webp 500w, https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/69a80ee31936a30bcd054873_Person%20with%20Red%20Sunglasses-p-800.webp 800w, https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/69a80ee31936a30bcd054873_Person%20with%20Red%20Sunglasses-p-1080.webp 1080w, https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/69a80ee31936a30bcd054873_Person%20with%20Red%20Sunglasses.webp 1200w"
+                        class="portrait" />
+                      <div class="small-flex">
+                        <div>Emma Larsen</div>
+                        <div class="smaller-text">Creative Director, Acme</div>
+                      </div>
+                    </div>
+                  </div>
+                </div><img
                   src="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/699ed6f18aceafc086e38d86_logo-2.webp"
                   loading="lazy" width="115" alt="" class="logo-image" />
               </div>
@@ -566,14 +605,52 @@
             </div>
             <div class="logo-content">
               <div class="logo-wrapper-card">
-                <img
+                <div class="testimonials-card hide-mobile">
+                  <div class="testimonials-top">
+                    <div class="top-text small-tessti">“What impressed us most was their structured thinking. Every
+                      design decision had purpose, every interaction had intention. Influmarki.”</div>
+                  </div>
+                  <div class="testimonials-bottom">
+                    <div class="div-block"><img
+                        src="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/69a80ee36b73c91feefc54ed_Blurred%20Futuristic%20Portrait%20(1).webp"
+                        loading="lazy" width="40" sizes="40px" alt=""
+                        srcset="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/69a80ee36b73c91feefc54ed_Blurred%20Futuristic%20Portrait%20(1)-p-500.webp 500w, https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/69a80ee36b73c91feefc54ed_Blurred%20Futuristic%20Portrait%20(1)-p-800.webp 800w, https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/69a80ee36b73c91feefc54ed_Blurred%20Futuristic%20Portrait%20(1).webp 1200w"
+                        class="portrait" />
+                      <div class="small-flex">
+                        <div>Daniel Whitmore</div>
+                        <div class="smaller-text">Marketing, VK Group</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="absolute-bottom">
+                  <div class="clients-small-blog">Success Stories</div>
+                </div><img
                   src="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/699ed6f18aceafc086e38db2_logo-10.webp"
                   loading="lazy" width="130" alt="" class="logo-image" />
               </div>
             </div>
             <div class="logo-content">
               <div class="logo-wrapper-card">
-                <img
+                <div class="testimonials-card hide-mobile">
+                  <div class="testimonials-top">
+                    <div class="top-text small-tessti">“Working with Influmarki felt like partnering with an in-house
+                      strategic team. They challenged our ideas, strengthened our positioning, and delivered a platform
+                      built to scale.”</div>
+                  </div>
+                  <div class="testimonials-bottom">
+                    <div class="div-block"><img
+                        src="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/69a80ee328f3e8d639efe5e3_Abstract%20Red%20Portrait%20(2).webp"
+                        loading="lazy" width="40" sizes="40px" alt=""
+                        srcset="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/69a80ee328f3e8d639efe5e3_Abstract%20Red%20Portrait%20(2)-p-500.webp 500w, https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/69a80ee328f3e8d639efe5e3_Abstract%20Red%20Portrait%20(2)-p-800.webp 800w, https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/69a80ee328f3e8d639efe5e3_Abstract%20Red%20Portrait%20(2)-p-1080.webp 1080w, https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/69a80ee328f3e8d639efe5e3_Abstract%20Red%20Portrait%20(2).webp 1200w"
+                        class="portrait" />
+                      <div class="small-flex">
+                        <div>Sofia Reinhardt</div>
+                        <div class="smaller-text">Elevate Technologies CEO</div>
+                      </div>
+                    </div>
+                  </div>
+                </div><img
                   src="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/699ed6f18aceafc086e38db1_logo-8.webp"
                   loading="lazy" width="84" alt="" class="logo-image _01" />
               </div>
@@ -993,11 +1070,11 @@
       <div class="testimonials-grid">
         <div class="testimonials-big-card">
           <div class="logo-absolute-top">
-            <p class="top-text logo">Altrum™</p>
+            <p class="top-text logo">Influmarki</p>
           </div>
           <div class="testimonials-card rl">
             <div class="testimonials-top">
-              <div class="top-text small-tessti">“The collaboration was smooth from start to finish. Altrum™ combines
+              <div class="top-text small-tessti">“The collaboration was smooth from start to finish. Influmarki combines
                 strong visual design with strategic thinking, delivering work that feels both premium and purposeful.”
               </div>
             </div>
@@ -1031,7 +1108,7 @@
                 loading="lazy" width="45" alt="" class="logo-testi" />
               <div class="divider-m"></div>
               <div>
-                <div class="top-text small-tessti">“Working with Altrum™ felt like partnering with a team that truly
+                <div class="top-text small-tessti">“Working with Influmarki felt like partnering with a team that truly
                   understands modern digital presence. Every detail was refined with precision, and the final result
                   elevated our brand beyond expectations.”</div>
               </div>
@@ -1061,7 +1138,7 @@
                 loading="lazy" width="45" alt="" class="logo-testi" />
               <div class="divider-m"></div>
               <div>
-                <div class="top-text small-tessti">“Altrum™ brought clarity and structure to our digital strategy. Their
+                <div class="top-text small-tessti">“Influmarki brought clarity and structure to our digital strategy. Their
                   design thinking and execution transformed complex ideas into a seamless and elegant experience.&quot;
                 </div>
               </div>
@@ -1771,17 +1848,30 @@
                   <div class="button-small-name">connectwinflumarki@gmail.com</div>
                 </div>
               </a>
-              <div class="bottom-grid"><a data-wf--button-arrow--variant="base" href="#"
+              <div class="bottom-grid" style="display: flex; flex-direction: column; gap: 20px; width: 100%; margin-top: 1.5rem;">
+                <a data-wf--button-arrow--variant="base" href="https://wa.me/916385751370?text=Hi!%20I%20have%20an%20inquiry%20regarding%20a%20project." target="_blank"
                   class="button-arrow w-inline-block"><img width="9" loading="lazy" alt=""
                     src="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/699f89c49271389efbdafdbc_arrows.png"
                     class="arrow-gray" />
                   <div class="button-title-flex">
-                    <div class="button-small-name">+1 100 300 404</div>
-                    <div class="button-small-name">+1 100 300 404</div>
+                    <div class="button-small-name">+91 63857 51370</div>
+                    <div class="button-small-name">+91 63857 51370</div>
                   </div>
                 </a>
-                <div id="w-node-da49b1d2-431a-4e8e-b6c3-f4888cada00e-8cad9fd8" class="copywrith-dark">
-                  <div>© 2026 Influmarki™ Studio</div>
+                
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 1.5rem; width: 100%; font-size: 13px; color: rgba(255,255,255,0.4); font-weight: 300;">
+                  <div id="w-node-da49b1d2-431a-4e8e-b6c3-f4888cada00e-8cad9fd8">
+                    © 2026 Influmarki™ Studio
+                  </div>
+                  
+                  <div>
+                    <a href="https://wa.me/916385751370?text=Hi!%20I%20have%20an%20inquiry%20regarding%20a%20project." target="_blank" 
+                       style="color: rgba(255,255,255,0.4); text-decoration: none; transition: color 0.3s ease;" 
+                       onmouseover="this.style.color='#fff';" 
+                       onmouseout="this.style.color='rgba(255,255,255,0.4)';">
+                      Website by Raghav & Bharath
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1890,6 +1980,46 @@
   <script src="https://cdn.prod.website-files.com/gsap/3.15.0/ScrollTrigger.min.js" type="text/javascript"></script>
   <script src="https://cdn.prod.website-files.com/gsap/3.15.0/CustomEase.min.js" type="text/javascript"></script>
   <script src="https://cdn.prod.website-files.com/gsap/3.15.0/EasePack.min.js" type="text/javascript"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+        gsap.registerPlugin(ScrollTrigger);
+        
+        const workCards = document.querySelectorAll('.work-wrapper');
+        workCards.forEach((card) => {
+          const imageWrapper = card.querySelector('.work-card');
+          if (imageWrapper) {
+            const tl = gsap.timeline({
+              scrollTrigger: {
+                trigger: card,
+                start: "top bottom",
+                end: "bottom top",
+                scrub: 1
+              }
+            });
+            gsap.set(imageWrapper, { 
+              rotationZ: -5, 
+              scale: 0.85, 
+              transformOrigin: "center center",
+              willChange: "transform"
+            });
+            tl.to(imageWrapper, {
+              rotationZ: 0,
+              scale: 1,
+              ease: "none",
+              duration: 1
+            })
+            .to(imageWrapper, {
+              rotationZ: 5,
+              scale: 0.85,
+              ease: "none",
+              duration: 1
+            });
+          }
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>
