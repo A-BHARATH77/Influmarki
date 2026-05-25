@@ -32,6 +32,9 @@
     html.w-mod-js:not(.w-mod-ix3) :is(.line-absolute, .navigation-text-main, .top-text.logo.animated, .fixed-menu, .page-overlay-main, .line-small-divider, .hero-image, .button-small-name, .slot-live-overlay, .blur-div, .big-text-btn, .button-big-line-overlay, .button-big-arrow, .social-tooltip, .testimonials-card, .top-text.gray, .h2._01, .subhead.slide._01, .subhead.slide._02, .subhead.slide._03, .subhead.slide._04, .loader-text-overflow, .top-text.loader.scale, .logo-loader-overflow, .navigation-top, .hero-content, .image-animation._02, .text-animation-card._02, .card-text._02, .image-animation._03, .text-animation-card._03, .card-text._03, [data-wf-target*='["699ed6f18aceafc086e38a65","668513fa-96bc-a471-9254-1244961a6485"]'], [data-wf-target*='["699ed6f18aceafc086e38a65","ce714b43-ca02-f75e-a30b-e50c0386be7f"]'], [data-wf-target*='["699ed6f18aceafc086e38a65","11f4fc70-8a2d-088c-43e4-29580902aa2d"]'], [data-wf-target*='["699ed6f18aceafc086e38a65","57b5af3e-8de7-1a3d-0bcc-71e02f1dacc5"]']) {
       visibility: hidden !important;
     }
+    html {
+      scroll-behavior: smooth;
+    }
     .w-webflow-badge {
       display: none !important;
     }
@@ -206,18 +209,18 @@
 </script>
 </head>
 
-<body>
+<body data-scroll-time="0">
   <div class="blur-effect"></div>
   <div class="navigation-top">
     <div data-w-id="3f11dda1-59af-fb4a-c839-097037349a12" data-animation="default" data-collapse="medium"
-      data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav"><a href="/"
+      data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav"><a href="#home"
         id="w-node-_3f11dda1-59af-fb4a-c839-097037349a13-37349a11" aria-current="page"
         class="logo-first w-inline-block w--current">
         <p class="top-text logo">Influmarki™</p>
        
       </a>
       <div id="w-node-_3f11dda1-59af-fb4a-c839-097037349a18-37349a11" class="make-grid hide-mobile">
-        <nav role="navigation" class="nav-menu first w-nav-menu"><a href="/" aria-current="page"
+        <nav role="navigation" class="nav-menu first w-nav-menu"><a href="#home" aria-current="page"
             class="button-link w-inline-block w--current">
             <div class="button-flex">
               <div class="text-overflow">
@@ -228,7 +231,7 @@
                 <div class="line-absolute"></div>
               </div>
             </div>
-          </a><a href="/about" class="button-link w-inline-block">
+          </a><a href="#about" class="button-link w-inline-block">
             <div class="button-flex">
               <div class="text-overflow">
                 <div class="navigation-text-main _01">About</div>
@@ -238,7 +241,7 @@
                 <div class="line-absolute"></div>
               </div>
             </div>
-          </a><a href="/work" class="button-link w-inline-block">
+          </a><a href="#work" class="button-link w-inline-block">
             <div class="button-flex">
               <div class="text-overflow">
                 <div class="navigation-text-main _01">Work<br /></div>
@@ -249,7 +252,7 @@
               </div>
             </div>
             <div class="number-text">(14)</div>
-          </a><a href="/services" class="button-link w-inline-block">
+          </a><a href="#services" class="button-link w-inline-block">
             <div class="button-flex">
               <div class="text-overflow">
                 <div class="navigation-text-main _01">Services</div>
@@ -260,7 +263,7 @@
               </div>
             </div>
             <div class="number-text">(07)</div>
-          </a><a href="/contact" class="button-link w-inline-block">
+          </a><a href="#contact" class="button-link w-inline-block">
             <div class="button-flex">
               <div class="text-overflow">
                 <div class="navigation-text-main _01">Contact</div>
@@ -294,7 +297,7 @@
             </div>
           </div>
           <div class="navigation-content">
-            <div class="menu-big-first"><a href="/" aria-current="page"
+            <div class="menu-big-first"><a href="#home" aria-current="page"
                 class="button-big-menu w-inline-block w--current">
                 <div class="button-big-flex"><img width="18" loading="lazy" alt=""
                     src="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/699f89c49271389efbdafdbc_arrows.png"
@@ -308,7 +311,7 @@
                 <div class="button-big-line">
                   <div class="button-big-line-overlay"></div>
                 </div>
-              </a><a href="/about" class="button-big-menu w-inline-block">
+              </a><a href="#about" class="button-big-menu w-inline-block">
                 <div class="button-big-flex"><img width="18" loading="lazy" alt=""
                     src="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/699f89c49271389efbdafdbc_arrows.png"
                     class="button-big-arrow" />
@@ -321,7 +324,7 @@
                 <div class="button-big-line">
                   <div class="button-big-line-overlay"></div>
                 </div>
-              </a><a href="/work" class="button-big-menu w-inline-block">
+              </a><a href="#work" class="button-big-menu w-inline-block">
                 <div class="button-big-flex"><img width="18" loading="lazy" alt=""
                     src="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/699f89c49271389efbdafdbc_arrows.png"
                     class="button-big-arrow" />
@@ -334,11 +337,11 @@
                 <div class="button-big-line">
                   <div class="button-big-line-overlay"></div>
                 </div>
-              </a><a href="/blog" class="button-big-menu w-inline-block">
+              </a><a href="#services" class="button-big-menu w-inline-block">
                 <div class="button-big-flex"><img width="18" loading="lazy" alt=""
                     src="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/699f89c49271389efbdafdbc_arrows.png"
                     class="button-big-arrow" />
-                  <div class="big-text-btn">News</div>
+                  <div class="big-text-btn">Services</div>
                   <div class="number-small-btn">
                     <div class="number-small-big-menu">04</div>
                     <div class="number-small-big-menu">04</div>
@@ -347,7 +350,7 @@
                 <div class="button-big-line">
                   <div class="button-big-line-overlay"></div>
                 </div>
-              </a><a href="/contact" class="button-big-menu w-inline-block">
+              </a><a href="#contact" class="button-big-menu w-inline-block">
                 <div class="button-big-flex"><img width="18" loading="lazy" alt=""
                     src="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/699f89c49271389efbdafdbc_arrows.png"
                     class="button-big-arrow" />
@@ -428,7 +431,7 @@
     </div>
   </div>
   <div class="main-content">
-    <div class="hero">
+    <div id="home" class="hero">
       <div class="hero-image">
         <div class="line-effect-divider">
           <div class="line-small-divider"></div>
@@ -482,9 +485,9 @@
                 <div class="subhead opacity">More than a studio,</div>
                 <div class="slide-wrapper">
                   <div class="subhead slide _01">we are the art of subtle branding.</div>
-                  <div class="subhead slide _02">we create invisible marketing</div>
-                  <div class="subhead slide _03">we build EQ connections</div>
-                  <div class="subhead slide _04">we make brands feel like culture</div>
+                  <div class="subhead slide _02">we create invisible marketing.</div>
+                  <div class="subhead slide _03">we build EQ connections.</div>
+                  <div class="subhead slide _04">we code digital legacies.</div>
                 </div>
                 <div class="divider-s"></div>
                 <div><a data-wf--button-arrow--variant="second" href="#" class="button-arrow w-inline-block"><img
@@ -536,30 +539,9 @@
           <div class="logo-grid">
             <div class="logo-content">
               <div class="logo-wrapper-card">
-                <div class="testimonials-card hide-mobile">
-                  <div class="testimonials-top">
-                    <div class="top-text small-tessti">“Altrum™ transformed our vision into a refined digital system
-                      that feels both strategic and effortless. Their attention to detail and clarity in execution made
-                      the entire process seamless.”</div>
-                  </div>
-                  <div class="testimonials-bottom">
-                    <div class="div-block"><img
-                        src="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/69a80ee31936a30bcd054873_Person%20with%20Red%20Sunglasses.webp"
-                        loading="lazy" width="40" sizes="40px" alt=""
-                        srcset="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/69a80ee31936a30bcd054873_Person%20with%20Red%20Sunglasses-p-500.webp 500w, https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/69a80ee31936a30bcd054873_Person%20with%20Red%20Sunglasses-p-800.webp 800w, https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/69a80ee31936a30bcd054873_Person%20with%20Red%20Sunglasses-p-1080.webp 1080w, https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/69a80ee31936a30bcd054873_Person%20with%20Red%20Sunglasses.webp 1200w"
-                        class="portrait" />
-                      <div class="small-flex">
-                        <div>Emma Larsen</div>
-                        <div class="smaller-text">Creative Director, Acme</div>
-                      </div>
-                    </div>
-                  </div>
-                </div><img
+                <img
                   src="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/699ed6f18aceafc086e38d86_logo-2.webp"
                   loading="lazy" width="115" alt="" class="logo-image" />
-                <div class="absolute-bottom">
-                  <div class="clients-small-blog">Success Stories</div>
-                </div>
               </div>
             </div>
             <div class="logo-content">
@@ -584,57 +566,16 @@
             </div>
             <div class="logo-content">
               <div class="logo-wrapper-card">
-                <div class="testimonials-card hide-mobile">
-                  <div class="testimonials-top">
-                    <div class="top-text small-tessti">“What impressed us most was their structured thinking. Every
-                      design decision had purpose, every interaction had intention. Altrum™.”</div>
-                  </div>
-                  <div class="testimonials-bottom">
-                    <div class="div-block"><img
-                        src="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/69a80ee36b73c91feefc54ed_Blurred%20Futuristic%20Portrait%20(1).webp"
-                        loading="lazy" width="40" sizes="40px" alt=""
-                        srcset="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/69a80ee36b73c91feefc54ed_Blurred%20Futuristic%20Portrait%20(1)-p-500.webp 500w, https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/69a80ee36b73c91feefc54ed_Blurred%20Futuristic%20Portrait%20(1)-p-800.webp 800w, https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/69a80ee36b73c91feefc54ed_Blurred%20Futuristic%20Portrait%20(1).webp 1200w"
-                        class="portrait" />
-                      <div class="small-flex">
-                        <div>Daniel Whitmore</div>
-                        <div class="smaller-text">Marketing, VK Group</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="absolute-bottom">
-                  <div class="clients-small-blog">Success Stories</div>
-                </div><img
+                <img
                   src="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/699ed6f18aceafc086e38db2_logo-10.webp"
                   loading="lazy" width="130" alt="" class="logo-image" />
               </div>
             </div>
             <div class="logo-content">
               <div class="logo-wrapper-card">
-                <div class="testimonials-card hide-mobile">
-                  <div class="testimonials-top">
-                    <div class="top-text small-tessti">“Working with Altrum™ felt like partnering with an in-house
-                      strategic team. They challenged our ideas, strengthened our positioning, and delivered a platform
-                      built to scale.”</div>
-                  </div>
-                  <div class="testimonials-bottom">
-                    <div class="div-block"><img
-                        src="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/69a80ee328f3e8d639efe5e3_Abstract%20Red%20Portrait%20(2).webp"
-                        loading="lazy" width="40" sizes="40px" alt=""
-                        srcset="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/69a80ee328f3e8d639efe5e3_Abstract%20Red%20Portrait%20(2)-p-500.webp 500w, https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/69a80ee328f3e8d639efe5e3_Abstract%20Red%20Portrait%20(2)-p-800.webp 800w, https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/69a80ee328f3e8d639efe5e3_Abstract%20Red%20Portrait%20(2)-p-1080.webp 1080w, https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/69a80ee328f3e8d639efe5e3_Abstract%20Red%20Portrait%20(2).webp 1200w"
-                        class="portrait" />
-                      <div class="small-flex">
-                        <div>Sofia Reinhardt</div>
-                        <div class="smaller-text">Elevate Technologies CEO</div>
-                      </div>
-                    </div>
-                  </div>
-                </div><img
+                <img
                   src="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/699ed6f18aceafc086e38db1_logo-8.webp"
                   loading="lazy" width="84" alt="" class="logo-image _01" />
-                <div class="absolute-bottom">
-                  <div class="clients-small-blog">Success Stories</div>
-                </div>
               </div>
             </div>
             <div class="logo-content">
@@ -646,7 +587,7 @@
         </div>
       </div>
     </div>
-    <section class="section-about">
+    <section id="about" class="section-about">
       <div class="section-sticky">
         <div class="about-split">
           <div class="photo-split">
@@ -693,7 +634,7 @@
                     long-term growth in mind.</div>
                 </div>
               </div>
-              <div class="flex-lft"><a data-wf--button-arrow--variant="fill" href="/contact"
+              <div class="flex-lft"><a data-wf--button-arrow--variant="fill" href="#contact"
                   class="button-arrow w-variant-08d6d02f-91c4-36cc-1de5-1a2f0f2dbaee w-inline-block"><img width="9"
                     loading="lazy" alt=""
                     src="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/699f89c49271389efbdafdbc_arrows.png"
@@ -709,7 +650,7 @@
       </div>
     </section>
   </div>
-  <section class="section for-work-section">
+  <section id="work" class="section for-work-section">
     <div class="container">
       <div>
         <div class="title-small-main">
@@ -720,7 +661,7 @@
             <div class="top-text">Highlighted Work</div>
           </div>
           <div id="w-node-ed75a45d-11d7-0be3-04ca-91c3e700e60c-86e38a65" class="hide"><a
-              data-wf--button-arrow--variant="base" href="/work" class="button-arrow w-inline-block"><img width="9"
+              data-wf--button-arrow--variant="base" href="#work" class="button-arrow w-inline-block"><img width="9"
                 loading="lazy" alt=""
                 src="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/699f89c49271389efbdafdbc_arrows.png"
                 class="arrow-gray" />
@@ -819,7 +760,7 @@
       </div>
     </div>
   </section>
-  <section class="section for-services">
+  <section id="services" class="section for-services">
     <div class="gray-big-div">
       <div class="container">
         <div>
@@ -1073,7 +1014,7 @@
               </div>
             </div>
           </div>
-          <div class="logo-absolute-top bottom"><a data-wf--button-arrow--variant="base" href="/contact"
+          <div class="logo-absolute-top bottom"><a data-wf--button-arrow--variant="base" href="#contact"
               class="button-arrow w-inline-block"><img width="9" loading="lazy" alt=""
                 src="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/699f89c49271389efbdafdbc_arrows.png"
                 class="arrow-gray" />
@@ -1363,7 +1304,7 @@
               <h3 class="card-title for-prc">$3,150 – $4,800 <span class="month-gray">/Month</span></h3>
             </div>
             <div>
-              <div class="flex-pricing"><a data-wf--button-arrow--variant="fill" href="/contact"
+              <div class="flex-pricing"><a data-wf--button-arrow--variant="fill" href="#contact"
                   class="button-arrow w-variant-08d6d02f-91c4-36cc-1de5-1a2f0f2dbaee w-inline-block"><img width="9"
                     loading="lazy" alt=""
                     src="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/699f89c49271389efbdafdbc_arrows.png"
@@ -1427,7 +1368,7 @@
               <h3 class="card-title for-prc-2"><span class="month-gray">Starting at</span> $7,500</h3>
             </div>
             <div>
-              <div class="flex-pricing"><a data-wf--button-arrow--variant="fill" href="/contact"
+              <div class="flex-pricing"><a data-wf--button-arrow--variant="fill" href="#contact"
                   class="button-arrow w-variant-08d6d02f-91c4-36cc-1de5-1a2f0f2dbaee w-inline-block"><img width="9"
                     loading="lazy" alt=""
                     src="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/699f89c49271389efbdafdbc_arrows.png"
@@ -1452,7 +1393,7 @@
               <h2 class="h1 for-h2 third">©Quick answers, no confusion.</h2>
               <div class="divider-s"></div>
               <div class="card-text rl-2">Clarity about our process and services</div>
-              <div class="divider-m"></div><a data-wf--button-arrow--variant="base" href="/contact"
+              <div class="divider-m"></div><a data-wf--button-arrow--variant="base" href="#contact"
                 class="button-arrow w-inline-block"><img width="9" loading="lazy" alt=""
                   src="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/699f89c49271389efbdafdbc_arrows.png"
                   class="arrow-gray" />
@@ -1716,7 +1657,7 @@
       </div>
     </div>
   </section>
-  <section data-wf--footer--variant="base" class="section for-services for-ftr">
+  <section id="contact" data-wf--footer--variant="base" class="section for-services for-ftr">
     <div class="gray-big-div">
       <div class="container">
         <div>
@@ -1739,7 +1680,7 @@
             <div class="grid-title make-4">
               <h2 class="h1 full-section">©Let&#x27;s Talk</h2>
               <div id="w-node-da49b1d2-431a-4e8e-b6c3-f4888cad9fea-8cad9fd8" class="div-block-2"><a
-                  id="w-node-cfa6b7f9-4425-9fa6-b4f3-9f335bef16b7-5bef16b7" href="/contact"
+                  id="w-node-cfa6b7f9-4425-9fa6-b4f3-9f335bef16b7-5bef16b7" href="#contact"
                   class="contact-team w-inline-block">
                   <div class="team-photo"><img loading="lazy"
                       src="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/69a80e66c49a31679ae575fe_Dramatic%20Blue%20Portrait.webp"
@@ -1814,7 +1755,7 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <div class="max-left"><a href="/" aria-current="page" class="logo-first w-inline-block w--current">
+          <div class="max-left"><a href="#home" aria-current="page" class="logo-first w-inline-block w--current">
               <p class="top-text logo">Influmarki™</p>
               <p class="top-text logo animated">Studio</p>
             </a>
@@ -1846,7 +1787,7 @@
             </div>
           </div>
         </div>
-        <div class="max-w-right"><a href="/" aria-current="page" class="button-big-menu w-inline-block w--current">
+        <div class="max-w-right"><a href="#home" aria-current="page" class="button-big-menu w-inline-block w--current">
             <div class="button-big-flex"><img width="18" loading="lazy" alt=""
                 src="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/699f89c49271389efbdafdbc_arrows.png"
                 class="button-big-arrow" />
@@ -1859,7 +1800,7 @@
             <div class="button-big-line">
               <div class="button-big-line-overlay"></div>
             </div>
-          </a><a href="/about" class="button-big-menu w-inline-block">
+          </a><a href="#about" class="button-big-menu w-inline-block">
             <div class="button-big-flex"><img width="18" loading="lazy" alt=""
                 src="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/699f89c49271389efbdafdbc_arrows.png"
                 class="button-big-arrow" />
@@ -1872,7 +1813,7 @@
             <div class="button-big-line">
               <div class="button-big-line-overlay"></div>
             </div>
-          </a><a href="/services" class="button-big-menu w-inline-block">
+          </a><a href="#services" class="button-big-menu w-inline-block">
             <div class="button-big-flex"><img width="18" loading="lazy" alt=""
                 src="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/699f89c49271389efbdafdbc_arrows.png"
                 class="button-big-arrow" />
@@ -1885,7 +1826,7 @@
             <div class="button-big-line">
               <div class="button-big-line-overlay"></div>
             </div>
-          </a><a href="/work" class="button-big-menu w-inline-block">
+          </a><a href="#work" class="button-big-menu w-inline-block">
             <div class="button-big-flex"><img width="18" loading="lazy" alt=""
                 src="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/699f89c49271389efbdafdbc_arrows.png"
                 class="button-big-arrow" />
@@ -1898,11 +1839,11 @@
             <div class="button-big-line">
               <div class="button-big-line-overlay"></div>
             </div>
-          </a><a href="https://www.flowmance.com/pricing" target="_blank" class="button-big-menu w-inline-block">
+          </a><a href="#contact" class="button-big-menu w-inline-block">
             <div class="button-big-flex"><img width="18" loading="lazy" alt=""
                 src="https://cdn.prod.website-files.com/699ed6f18aceafc086e38a82/699f89c49271389efbdafdbc_arrows.png"
                 class="button-big-arrow" />
-              <div class="big-text-btn">Unlock All Access</div>
+              <div class="big-text-btn">Contact</div>
               <div class="number-small-btn">
                 <div class="number-small-big-menu">05</div>
                 <div class="number-small-big-menu">05</div>
