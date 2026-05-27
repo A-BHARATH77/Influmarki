@@ -62,6 +62,18 @@
     .work-wrapper:hover .work-title {
       transform: translateX(8px) !important;
     }
+
+    /* Keep loader visible during 5s transition */
+    .intro {
+      display: flex !important;
+      opacity: 1;
+      visibility: visible !important;
+      transition: opacity 1s ease-in-out;
+    }
+    .intro.hide-loader {
+      opacity: 0 !important;
+      pointer-events: none !important;
+    }
   </style>
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
@@ -73,6 +85,13 @@
     rel="shortcut icon" type="image/png" />
   <link href="influmarki.png"
     rel="apple-touch-icon" />
+  <!-- Preload Featured Works Images -->
+  <link rel="preload" as="image" href="Works/lagom brochure.png" />
+  <link rel="preload" as="image" href="Works/Coffee.JPG" />
+  <link rel="preload" as="image" href="Works/DSC01259.JPEG" />
+  <link rel="preload" as="image" href="Works/Newrizz.png" />
+  <link rel="preload" as="image" href="Works/watch mockup.png" />
+  <link rel="preload" as="image" href="Works/work.JPG.jpeg" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -702,7 +721,7 @@
           <div role="listitem" class="work-wrapper w-dyn-item">
             <div class="work-card"><a data-w-id="c241ff96-b3bb-064f-293f-7edacc41ffcc" href="/project/forma-digital"
                 class="work-card-link w-inline-block">
-                <div class="main-image"><img loading="lazy"
+                <div class="main-image"><img loading="eager"
                     src="Works/lagom brochure.png"
                     alt="" class="image-bacgkround" />
                   <div class="overlay"></div>
@@ -720,7 +739,7 @@
           <div role="listitem" class="work-wrapper w-dyn-item">
             <div class="work-card"><a data-w-id="c241ff96-b3bb-064f-293f-7edacc41ffcc" href="/project/nero-vision"
                 class="work-card-link w-inline-block">
-                <div class="main-image"><img loading="lazy"
+                <div class="main-image"><img loading="eager"
                     src="Works/Coffee.JPG"
                     alt="" class="image-bacgkround" />
                   <div class="overlay"></div>
@@ -738,7 +757,7 @@
           <div role="listitem" class="work-wrapper w-dyn-item">
             <div class="work-card"><a data-w-id="c241ff96-b3bb-064f-293f-7edacc41ffcc" href="/project/one-step"
                 class="work-card-link w-inline-block">
-                <div class="main-image"><img loading="lazy"
+                <div class="main-image"><img loading="eager"
                     src="Works/DSC01259.JPEG"
                     alt="" class="image-bacgkround" />
                   <div class="overlay"></div>
@@ -756,7 +775,7 @@
           <div role="listitem" class="work-wrapper w-dyn-item">
             <div class="work-card"><a data-w-id="c241ff96-b3bb-064f-293f-7edacc41ffcc" href="/project/bold-moves"
                 class="work-card-link w-inline-block">
-                <div class="main-image"><img loading="lazy"
+                <div class="main-image"><img loading="eager"
                     src="Works/Newrizz.png"
                     alt="" class="image-bacgkround" />
                   <div class="overlay"></div>
@@ -774,7 +793,7 @@
           <div role="listitem" class="work-wrapper w-dyn-item">
             <div class="work-card"><a data-w-id="c241ff96-b3bb-064f-293f-7edacc41ffcc" href="#"
                 class="work-card-link w-inline-block">
-                <div class="main-image"><img loading="lazy"
+                <div class="main-image"><img loading="eager"
                     src="Works/watch mockup.png"
                     alt="" class="image-bacgkround" />
                   <div class="overlay"></div>
@@ -792,7 +811,7 @@
           <div role="listitem" class="work-wrapper w-dyn-item">
             <div class="work-card"><a data-w-id="c241ff96-b3bb-064f-293f-7edacc41ffcc" href="#"
                 class="work-card-link w-inline-block">
-                <div class="main-image"><img loading="lazy"
+                <div class="main-image"><img loading="eager"
                     src="Works/work.JPG.jpeg"
                     alt="" class="image-bacgkround" />
                   <div class="overlay"></div>
@@ -1984,6 +2003,21 @@
             });
           }
         });
+
+        // Loader Control: Stay for 5 seconds
+        const loader = document.querySelector('.intro');
+        if (loader) {
+          gsap.to(loader, {
+            opacity: 0,
+            duration: 1.5,
+            delay: 5, // Wait for 5 seconds
+            ease: "power2.inOut",
+            onComplete: () => {
+              loader.classList.add('hide-loader');
+              loader.style.display = 'none';
+            }
+          });
+        }
       }
     });
   </script>
